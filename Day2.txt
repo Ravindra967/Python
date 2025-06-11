@@ -1,0 +1,153 @@
+
+# 🧮 Python Operators – A Detailed and Professional Guide
+
+In Python, **operators** are special symbols or keywords used to perform **operations** on variables and values. Python supports a variety of operator types, categorized based on their functionality.
+
+---
+
+## 📌 Categories of Operators in Python:
+
+1. **Arithmetic Operators**
+2. **Assignment Operators**
+3. **Comparison (Relational) Operators**
+4. **Logical Operators**
+5. **Bitwise Operators**
+6. **Membership Operators**
+7. **Identity Operators**
+
+---
+
+## 1️⃣ **Arithmetic Operators**
+
+Used for basic mathematical operations.
+
+| Operator | Description         | Example  | Result |
+| -------- | ------------------- | -------- | ------ |
+| `+`      | Addition            | `3 + 2`  | `5`    |
+| `-`      | Subtraction         | `5 - 1`  | `4`    |
+| `*`      | Multiplication      | `4 * 2`  | `8`    |
+| `/`      | Division            | `10 / 2` | `5.0`  |
+| `%`      | Modulus (remainder) | `10 % 3` | `1`    |
+| `**`     | Exponentiation      | `2 ** 3` | `8`    |
+| `//`     | Floor Division      | `7 // 2` | `3`    |
+
+> 🔸 Note: Division `/` always returns a float, even if operands are integers.
+
+---
+
+## 2️⃣ **Assignment Operators**
+
+Used to assign values to variables.
+
+| Operator | Example   | Equivalent To |
+| -------- | --------- | ------------- |
+| `=`      | `x = 5`   | Assign 5 to x |
+| `+=`     | `x += 3`  | `x = x + 3`   |
+| `-=`     | `x -= 2`  | `x = x - 2`   |
+| `*=`     | `x *= 4`  | `x = x * 4`   |
+| `/=`     | `x /= 2`  | `x = x / 2`   |
+| `%=`     | `x %= 3`  | `x = x % 3`   |
+| `**=`    | `x **= 2` | `x = x ** 2`  |
+| `//=`    | `x //= 2` | `x = x // 2`  |
+
+> 🔹 Useful for updating variables concisely during loops or calculations.
+
+---
+
+## 3️⃣ **Comparison Operators**
+
+Used to compare two values and return a boolean (`True` or `False`).
+
+| Operator | Description           | Example  | Result |
+| -------- | --------------------- | -------- | ------ |
+| `==`     | Equal to              | `5 == 5` | `True` |
+| `!=`     | Not equal to          | `3 != 4` | `True` |
+| `>`      | Greater than          | `6 > 4`  | `True` |
+| `<`      | Less than             | `4 < 6`  | `True` |
+| `>=`     | Greater than or equal | `5 >= 5` | `True` |
+| `<=`     | Less than or equal    | `4 <= 5` | `True` |
+
+---
+
+## 4️⃣ **Logical Operators**
+
+Used to combine conditional statements.
+
+| Operator | Description                  | Example         | Result  |
+| -------- | ---------------------------- | --------------- | ------- |
+| `and`    | True if both are True        | `True and True` | `True`  |
+| `or`     | True if at least one is True | `True or False` | `True`  |
+| `not`    | Inverts the boolean value    | `not True`      | `False` |
+
+### Example:
+
+```python
+age = 25
+if age > 18 and age < 30:
+    print("Eligible")  # Output: Eligible
+```
+
+---
+
+## 5️⃣ **Bitwise Operators**
+
+Used to perform binary-level operations.
+
+| Operator | Name        | Description              |                           |
+| -------- | ----------- | ------------------------ | ------------------------- |
+| `&`      | AND         | Bits that are 1 in both  |                           |
+| \`       | \`          | OR                       | Bits that are 1 in either |
+| `^`      | XOR         | Bits that are different  |                           |
+| `~`      | NOT         | Inverts all the bits     |                           |
+| `<<`     | Left Shift  | Shifts bits to the left  |                           |
+| `>>`     | Right Shift | Shifts bits to the right |                           |
+
+### Example:
+
+```python
+a = 5        # 0101
+b = 3        # 0011
+print(a & b) # 0001 → 1
+```
+
+---
+
+## 6️⃣ **Membership Operators**
+
+Used to test whether a value exists in a sequence.
+
+| Operator | Description              | Example                       |
+| -------- | ------------------------ | ----------------------------- |
+| `in`     | True if value is present | `'a' in 'apple'` → `True`     |
+| `not in` | True if value is absent  | `'x' not in 'apple'` → `True` |
+
+---
+
+## 7️⃣ **Identity Operators**
+
+Used to compare the memory location (identity) of two objects.
+
+| Operator | Description                  | Example      |
+| -------- | ---------------------------- | ------------ |
+| `is`     | True if both are same object | `x is y`     |
+| `is not` | True if not same object      | `x is not y` |
+
+### Example:
+
+```python
+x = [1, 2]
+y = x
+z = [1, 2]
+print(x is y)      # True
+print(x is z)      # False (different objects with same content)
+```
+
+---
+
+## 🧠 Key Takeaways:
+
+* Python's operator set is extensive and intuitive.
+* Understanding operator **precedence** and **associativity** is important in complex expressions.
+* Logical and bitwise operators are essential in both conditional logic and system-level operations.
+* Use `is`/`is not` carefully — they check **object identity**, not just value equality.
+
