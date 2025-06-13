@@ -74,7 +74,6 @@ Count is: 5
 
 > ⚠️ Be careful! If the condition never becomes false, the loop will run forever.
 
----
 
 ### 🔹 `for` loop
 
@@ -90,7 +89,7 @@ for variable in sequence:
 #### 💡 Example:
 
 ```python
-for name in ["Ravi", "Meena", "Amit"]:
+for name in ["Ravi", "Methu", "Amit"]:
     print("Hello", name)
 ```
 
@@ -98,7 +97,7 @@ for name in ["Ravi", "Meena", "Amit"]:
 
 ```
 Hello Ravi
-Hello Meena
+Hello Methu
 Hello Amit
 ```
 
